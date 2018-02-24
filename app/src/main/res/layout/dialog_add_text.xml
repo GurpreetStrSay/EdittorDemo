@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_addText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:hint="Enter your text here"
+        android:padding="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/colorpicker"
+            android:layout_width="40dp"
+            android:layout_margin="6dp"
+            android:layout_height="40dp"
+            android:text="choose color" />
+        <ImageView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:src="@drawable/colorpickr"
+            android:text="choose color" />
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/txtsize"
+        android:layout_width="match_parent"
+        android:hint="Text Size"
+        android:inputType="number"
+        android:padding="16dp"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/btn_submitText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textColor="#fff" />
+</LinearLayout>
